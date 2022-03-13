@@ -1,0 +1,276 @@
+<!-- The 5th hour I added a shape in .header for decoration and positioned it so it fits properly, I am working on its responsiveness -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="keywords" content="html, css, responsive, resume">
+    <meta name="description" content="personal resume responsive webpage made with html/css">
+    <meta name="author" content="Amar Corbic">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+        <title>PersonalResumeWebsite</title>
+    
+    <style>
+      
+        body{
+
+            background-color: #272640;
+            margin:0;
+            
+            
+        }
+        .content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-left:10%;
+            margin-right:10%;
+           
+        }
+/* header section */
+      .header{
+         width: 100%;
+         display: flex;
+         flex-direction: column;
+         position: relative;
+        justify-content: center;
+        align-items: center;
+       
+      }
+
+      #headerImage{
+         display: flex;
+         justify-content: center;
+          width: 100%;
+          box-shadow: 0 0 25px #4D194D;
+          
+      }
+      .hImage{
+          position: relative;
+          width: 100%;
+      }
+      #headerShape{
+          width: 100%;
+          height: 100%;
+          z-index: 1;
+          position: relative;
+          opacity: 0.6;
+          
+
+      }
+      .hShape{
+         
+        position: absolute;
+      }
+      #myPhoto{
+        z-index: 2;
+        position: relative;
+          width: 200px;
+         height: 200px;
+          align-self:flex-start;
+          border-radius: 50%;
+          box-shadow: 0 0 15px #fff;
+          
+      }
+      .hMyImage{
+          position: absolute;
+      }
+      
+      #headerWelcome{
+            z-index: 2;
+          position: absolute;
+          justify-content: flex-end;
+          padding-top: 20px;
+          padding-bottom:20px;
+          color:#d8e2dc;
+          font-family: 'Orbitron', sans-serif;
+            font-size: 1.5em;
+            width: 100%;
+            text-align: center;
+            background-color:#272640 ;
+            opacity: 0.8;
+            
+      }
+      .hParagraph{
+          position: absolute;
+          width: 100%;
+          height: auto;
+          bottom: 150px;
+         
+      }
+
+ /* main section starting from here */
+
+      main{
+        margin-top:20px;                                                        
+          width: 100%;
+          display:grid;
+          background-color: #212f45;
+          color:#d8e2dc;
+          padding: 0px;
+          font-family: 'Open Sans', sans-serif;
+          box-shadow: 0 0 25px #4D194D;
+          
+        
+      }
+      .infoBox{
+          padding: 20px;
+          margin: 1.5%;
+          background:linear-gradient(#212f45, #006466);
+         
+          
+      }
+        .infoBoxHeading{
+          border-bottom: 5px ridge #006466;
+          padding:20px;
+          font-size: 20px;
+          color: #def5e7;
+      }
+      dl{
+         line-height: 35px;
+         padding-left: 10px;
+      }
+    @media only screen and (max-width:500px){
+        #myPhoto{
+            width: 100px;
+            height: 100px;
+        }
+        #headerShape{
+            width: 200px;
+            height: 200px;
+        }
+
+    }
+    @media only screen and (max-width:1170px){
+        #headerShape{
+            width: 200px;
+            height: 200px;
+        }
+    }
+    
+    </style>
+</head>
+
+<body>
+    <div class="content">
+    
+        <div class="header">
+            <div class="hImage">
+            <img id="headerImage"src="atomswallpaper.jpg" alt="">
+        </div>
+        <div class="hShape">
+            <img id="headerShape" src="headerShape.png" alt="">
+        </div>
+            <div class="hMyImage">
+            <img id="myPhoto"src="1645893727486.jpg" alt="">
+        </div>
+        <div class="hParagraph">
+            <p id="headerWelcome">Welcome To My Resume Webpage</p>
+        </div>
+        </div>
+    
+    <main>
+        
+        <div class="infoBox">
+            <h1><strong> Amar Čorbić</strong></h1>
+            <p class="infoBoxHeading"> BIOGRAPHY </p>
+            <dl>
+                <dt>
+                    Born 3. July, year 1999.
+                </dt>
+                <dt>
+                    Tuzla, Federation of Bosnia and Herzegovina, Bosnia and Herzegovina 
+                </dt>
+                <dt>
+                    Unemployed / Student
+                </dt>
+                <dt>
+                    Web Developer 
+                </dt>
+            </dl>
+        </div>
+        <div class="infoBox">
+            <p class="infoBoxHeading"> EDUCATION </p>
+            <dl>
+                <dt>
+                    - Gymnasium "Meša Selimović"
+                </dt>
+                <dt>
+                   - Bachelor of Information Technology (2019-2024) | Internacionalna poslovno-informaciona akademija 
+                   
+                </dt>
+                <dt>
+                
+                </dt>
+            </dl>
+        </div>
+        <div class="infoBox">
+            <p class="infoBoxHeading"> SKILLS </p>
+            <dl>
+                <dt>
+                   - WEB Programming
+                    <dd>
+                        - HTML
+                    </dd>
+                    <dd>- CSS
+
+                    </dd>
+                </dt>
+                <dt>
+                  - Graphic design
+                  <dd>- PhotoShop</dd>
+                  <dd>- AdobeIllustrator</dd>
+                </dt>
+            </dl>
+
+        </div>
+        <div class="infoBox">
+            <p class="infoBoxHeading"> LANGUAGES </p>
+            <dl>
+                <dt>- English</dt>
+                <dt>- German</dt>
+                <dt>- Bosnian</dt>
+            </dl>
+
+        </div>
+        <div class="infoBox">
+            <p class="infoBoxHeading"> HOBBIES </p>
+            <dl>
+                <dt>- Bodybuilding</dt>
+                <dt>- Swimming</dt>
+                <dt>- Reading books</dt>
+            </dl>
+
+        </div>
+        <div class="infoBox">
+            <p class="infoBoxHeading"> CONTACT </p>
+            <dl>
+                <dt>- E-mail:
+                    <dd> amar.corbic99@gmail.com</dd>
+                    <dd>amar_corbic@hotmail.com</dd>
+                </dt>
+                <dt>- Linkedin:
+                    <dd>https://www.linkedin.com/in/amarcorbic/</dd>
+                </dt>
+                <dt>- Phone number:
+                    <dd>38760-323-6320</dd>
+                </dt>
+                
+            </dl>
+
+        </div>
+      
+
+
+    </main>
+    <footer>
+
+    </footer>
+</div>
+</body>
+</html>

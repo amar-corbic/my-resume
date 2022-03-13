@@ -1,0 +1,173 @@
+<!-- The 2nd hour I fixed few mistakes, experimented and adjusted some of the pevious CSS property values, 
+which I will probably readjust again, imported 2 google fonts which I will be using on this webpage.
+I started working on new section <main> in <body> element, and added some text for preview -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="keywords" content="html, css, responsive, resume">
+    <meta name="description" content="personal resume responsive webpage made with html/css">
+    <meta name="author" content="Amar Corbic">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+        <title>PersonalResumeWebsite</title>
+    
+    <style>
+      
+        body{
+
+            background-color: #272640;
+            margin:0;
+            
+            
+        }
+        .content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-left:10%;
+            margin-right:10%;
+           
+        }
+/* header section */
+      .header{
+         width: 100%;
+         display: flex;
+         flex-direction: column;
+         position: relative;
+        justify-content: center;
+        align-items: center;
+       
+      }
+
+      #headerImage{
+         display: flex;
+         justify-content: center;
+          width: 100%;
+          box-shadow: 0 0 25px #4D194D;
+          
+      }
+      .hImage{
+          position: relative;
+          width: 100%;
+      }
+      #myPhoto{
+         
+          width: 200px;
+         height: 200px;
+          align-self:flex-start;
+          border-radius: 40%;
+          box-shadow: 0 0 15px #fff;
+          
+      }
+      .hMyImage{
+          position: absolute;
+      }
+      #headerWelcome{
+            z-index: 2;
+          position: absolute;
+          justify-content: flex-end;
+          padding-top: 20px;
+          padding-bottom:20px;
+          color:#d8e2dc;
+          font-family: 'Orbitron', sans-serif;
+            font-size: 1.5em;
+            width: 100%;
+            text-align: center;
+            background-color:#272640 ;
+            opacity: 0.8;
+            
+      }
+      .hParagraph{
+          position: absolute;
+          width: 100%;
+          height: auto;
+          bottom: 150px;
+         
+      }
+
+ /* main section starting from here */
+
+      main{
+        margin-top:20px;                                                        
+          width: 100%;
+          display:grid;
+          background-color: #212f45;
+          color:#d8e2dc;
+          padding: 0px;
+          font-family: 'Open Sans', sans-serif;
+          box-shadow: 0 0 25px #4D194D;
+          
+        
+      }
+      .biography{
+          padding: 20px;
+          margin: 1.5%;
+          background:linear-gradient(#212f45, #006466);
+         
+          
+      }
+      .biographyText{
+          border-top: 5px ridge #006466;
+          padding:20px;
+          font-size: 20px;
+      }
+    @media only screen and (max-width:500px){
+        #myPhoto{
+            width: 100px;
+            height: 100px;
+        }
+    }
+    
+    </style>
+</head>
+
+<body>
+    <div class="content">
+    
+        <div class="header">
+            <div class="hImage">
+            <img id="headerImage"src="atomswallpaper.jpg" alt="">
+        </div>
+            <div class="hMyImage">
+            <img id="myPhoto"src="1645893727486.jpg" alt="">
+        </div>
+        <div class="hParagraph">
+            <p id="headerWelcome">Welcome To My Resume Webpage</p>
+        </div>
+        </div>
+    
+    <main>
+        
+        <div class="biography">
+            <h1><strong> Čorbić Amar</strong></h1>
+            <p class="biographyText"> BIOGRAPHY </p>
+            <dl>
+                <dt>
+                    Born 3. July, year 1999.
+                </dt>
+            </dl>
+        </div>
+        <div class="education">
+
+        </div>
+        <div class="skills">
+
+        </div>
+        <div class="hobies">
+
+        </div>
+
+
+    </main>
+    <footer>
+
+    </footer>
+</div>
+</body>
+</html>

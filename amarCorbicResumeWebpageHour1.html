@@ -1,0 +1,130 @@
+<!-- The 2nd hour I fixed few mistakes, experimented and adjusted some of the pevious CSS property values, 
+which I will probably readjust again, imported 2 google fonts which I will be using on this webpage.
+I started working on new section <main> in <body> element, and added some text for preview -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="keywords" content="html, css, responsive, resume">
+    <meta name="description" content="personal resume responsive webpage made with html/css">
+    <meta name="author" content="Amar Corbic">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+        <title>PersonalResumeWebsite</title>
+    
+    <style>
+      
+        body{
+            background-color: #272640;
+            margin:0;
+            justify-content: center;
+            
+        }
+        .content{
+            margin-left:10%;
+            margin-right:10%;
+            justify-content: center;
+        }
+/* header section */
+      .header{
+         width: 100%;
+         display: flex;
+         position: relative;
+        justify-content: center;
+        align-items: center;
+       
+      }
+
+      #headerImage{
+          width: 1200px;
+          height: 500px;
+          min-width: 800px;
+          box-shadow: 0 0 25px #4D194D;
+          
+      }
+      #myphoto{
+          top:50px;
+          width: 250px;
+          height: 250px;
+          position: absolute;
+          align-self:flex-start;
+          border-radius: 40%;
+          box-shadow: 0 0 15px #fff;
+          
+      }
+      #headerWelcome{
+          bottom:20px;
+          position: absolute;
+          padding-top: 20px;
+          padding-bottom:20px;
+          color:white;
+          font-family: 'Orbitron', sans-serif;
+            font-size: 1.5em;
+            width: 1200px;
+            text-align: center;
+            background-color:#272640 ;
+            opacity: 0.8;
+            
+      }
+ /* main section starting from here */
+
+      main{
+        margin-top:20px;
+          width: 100%;
+          display:grid;
+          background-color: #212f45;
+          color:#f5f3f4;
+          padding: 0px;
+          font-family: 'Open Sans', sans-serif;
+          box-shadow: 0 0 25px #4D194D;
+          
+        
+      }
+      .intro{
+          padding: 20px;
+          margin: 1.5%;
+          background:linear-gradient(#212f45, #006466);
+         
+          
+      }
+      
+    </style>
+</head>
+
+<body>
+    <div class="content">
+    <header>
+        <div class="header">
+            <img id="headerImage"src="atomswallpaper.jpg" alt="">
+            <img id="myphoto"src="1645893727486.jpg" alt="">
+            <p id="headerWelcome">Welcome To My Resume Webpage</p>
+        </div>
+    </header>
+    <main>
+        
+        <div class="intro">
+            <h1><strong> My full name is Amar Corbic</strong></h1>
+            <p class="introText"> WEB Developer in development.  </p>
+        </div>
+        <div class="education">
+
+        </div>
+        <div class="skills">
+
+        </div>
+        <div class="hobies">
+
+        </div>
+
+
+    </main>
+    <footer>
+
+    </footer>
+</div>
+</body>
+</html>
